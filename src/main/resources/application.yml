@@ -1,0 +1,15 @@
+spring:
+  profiles:
+    include: security
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+server:
+  port: 8099
+
+host:
+  url: localhost:8099
+  filepath: local/
