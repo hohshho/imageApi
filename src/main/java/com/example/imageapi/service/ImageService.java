@@ -116,7 +116,7 @@ public class ImageService {
     public List<S3File> getFileList() {
         ListObjectsV2Request request = ListObjectsV2Request.builder()
                 .bucket(bucketName)
-                .prefix(path)
+                .prefix("")
                 .build();
 
         ListObjectsV2Response result;
